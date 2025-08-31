@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QA Academy Pro | Apprends le QA Manuel & Automatisation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            primary: '#1E40AF',
+            accent: '#F59E0B',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .btn { @apply px-6 py-3 rounded-lg font-medium shadow transition; }
+    .btn-primary { @apply bg-primary text-white hover:bg-blue-800; }
+    .btn-outline { @apply border border-primary text-primary hover:bg-primary/10; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+          <span class="text-white font-bold text-lg">Q</span>
+        </div>
+        <h1 class="text-xl font-bold">QA Academy Pro</h1>
+      </div>
+      <div class="flex items-center space-x-4">
+        <select id="lang" class="border rounded px-2 py-1 text-sm">
+          <option value="fr">🇫🇷 Français</option>
+          <option value="en">🇬🇧 English</option>
+          <option value="he">🇮🇱 עברית</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-blue-50 to-indigo-100 py-20 px-4 text-center">
+    <h1 class="text-3xl md:text-5xl font-bold mb-6">
+      Apprends le <span class="text-primary">QA Manuel & Automatisation</span>
+    </h1>
+    <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+      5 modules gratuits • Projets réels sur Amazon, GitHub, Booking • CV, LinkedIn, GitHub • 
+      Deviens recrutable en 6 mois
+    </p>
+    <a href="#free-modules" class="btn btn-primary text-lg mr-4">Commence gratuitement</a>
+    <a href="#demo" class="btn btn-outline">Voir la démo</a>
+  </section>
+
+  <!-- Free Modules -->
+  <section id="free-modules" class="py-16 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">5 modules gratuits</h2>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div class="border rounded-lg p-6 bg-gray-50">
+          <h3 class="text-xl font-semibold mb-2">1. Introduction au QA</h3>
+          <p>Qu’est-ce qu’un test ? Pourquoi tester ?</p>
+        </div>
+        <div class="border rounded-lg p-6 bg-gray-50">
+          <h3 class="text-xl font-semibold mb-2">2. Test Cases Basics</h3>
+          <p>Structure, exemples, template inclus</p>
+        </div>
+        <div class="border rounded-lg p-6 bg-gray-50">
+          <h3 class="text-xl font-semibold mb-2">3. Types de Tests</h3>
+          <p>Fonctionnel, Smoke, Regression</p>
+        </div>
+        <div class="border rounded-lg p-6 bg-gray-50 opacity-60">
+          <h3 class="text-xl font-semibold mb-2">4. Bug Reporting</h3>
+          <p class="text-gray-500">Premium</p>
+        </div>
+        <div class="border rounded-lg p-6 bg-gray-50 opacity-60">
+          <h3 class="text-xl font-semibold mb-2">5. Selenium Basics</h3>
+          <p class="text-gray-500">Premium</p>
+        </div>
+        <div class="border rounded-lg p-6 bg-gray-50 opacity-60">
+          <h3 class="text-xl font-semibold mb-2">6. API Testing</h3>
+          <p class="text-gray-500">Premium</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-10 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-2xl font-bold mb-4">QA Academy Pro</h3>
+      <p class="text-gray-400">De zéro à QA Engineer en 6 mois.</p>
+      <p class="text-sm text-gray-500 mt-6">&copy; 2025 Tous droits réservés</p>
+    </div>
+  </footer>
+
+</body>
+</html>
